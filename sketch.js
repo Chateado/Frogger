@@ -166,11 +166,11 @@ function draw() {
         fill(255);
       }
       
-      rect(xButton, yButton3, lb, al);
+      //rect(xButton, yButton3, lb, al);
       
-      textSize(25);
-      fill(0, 0, 0);
-      text("Opções", 205, 400);
+      //textSize(25);
+      //fill(0, 0, 0);
+      //text("Opções", 205, 400);
       
       circle(mouseX, mouseY, 10);
       
