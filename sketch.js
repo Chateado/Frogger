@@ -106,6 +106,8 @@ function setup() {
 }
 
 function draw() {
+
+  frameRate(30);
   
   switch (screen) {
       
@@ -188,13 +190,13 @@ function draw() {
          image(frog, x_sapo, y_sapo, 50, 25);
         
         if (keyIsDown(LEFT_ARROW)) {
-          x_sapo -= 3;
+          x_sapo -= 5;
         } else if (keyIsDown(RIGHT_ARROW)) {
-          x_sapo += 3;
+          x_sapo += 5;
         } else if (keyIsDown(UP_ARROW)) {
-          y_sapo -= 3;
+          y_sapo -= 5;
         } else if (keyIsDown(DOWN_ARROW)) {
-          y_sapo += 3;
+          y_sapo += 5;
         }
         
       image(carro_1, x_carro_1, y_carro_1, 50, 25);
