@@ -131,7 +131,7 @@ function draw() {
       
       textSize(25);
       fill(0, 0, 0);
-      text("Clique para jogar", 155, 200);
+      text("Clique para jogar", 190, 300);
       
       circle(mouseX, mouseY, 10);
       break;      
@@ -147,13 +147,13 @@ function draw() {
          image(frog, x_sapo, y_sapo, 50, 25);
         
         if (keyIsDown(LEFT_ARROW)) {
-          x_sapo -= 5;
+          x_sapo -= 6;
         } else if (keyIsDown(RIGHT_ARROW)) {
-          x_sapo += 5;
+          x_sapo += 6;
         } else if (keyIsDown(UP_ARROW)) {
-          y_sapo -= 5;
+          y_sapo -= 6;
         } else if (keyIsDown(DOWN_ARROW)) {
-          y_sapo += 5;
+          y_sapo += 6;
         }
         
       image(carro_1, x_carro_1, y_carro_1, 50, 25);
@@ -269,7 +269,7 @@ function draw() {
         fill(255);
       }
       
-      rect(xButton, yButton5, lb, al);
+      rect(xButton, yButton2, lb, al);
       
       textSize(25);
       fill(0, 0, 0);
