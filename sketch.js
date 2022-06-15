@@ -41,7 +41,7 @@ function setup() {
   
   yButton1 = 150;
   yButton2 = 250;
-  yButton3 = 350;
+  //yButton3 = 350;
   
   //Tela de instruções
   
