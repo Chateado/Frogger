@@ -1,7 +1,7 @@
 /* Desenvolvido por Luis Martins */
 
 //(Botões de interação do menu)
-var xButton, yButton1, yButton2, yButton3, yButton4, yButton5;
+var xButton, yButton1, yButton2;
 
 //Verificações do tamanho dos polígonos do menu
 var lb, al;
@@ -38,21 +38,15 @@ function setup() {
   //Tela principal
   
   xButton = 150;
-  
-  yButton1 = 150;
-  yButton2 = 250;
-  //yButton3 = 350;
-  
-  //Tela de instruções
-  
-  yButton4 = 350;
-  
+  yButton1 = 250;
+
+  //Definição do tamanho do retângulo
   lb = 200;
-  
   al = 80;
-  
+
+  //Setando tela
   screen = 0;
-  
+
   //Jogo
   
   hit_car_1 = false;
@@ -102,7 +96,7 @@ function setup() {
   
   //Botão pra jogar novamente
   
-  yButton5 = 250;
+  yButton2 = 250;
 }
 
 function draw() {
@@ -133,51 +127,14 @@ function draw() {
         fill(255);
       }
       
-      rect(xButton, yButton1,lb, al);
+      rect(xButton, yButton1, lb, al);
       
       textSize(25);
       fill(0, 0, 0);
       text("Clique para jogar", 155, 200);
       
-      if (mouseX > xButton && mouseX < xButton + lb && mouseY > yButton2 && mouseY < yButton2 + al) {
-        
-        fill (124, 252, 0);
-        
-        if (mouseIsPressed) {
-          screen = 2;
-        }
-        
-      } else {
-        fill(255);
-      }
-      
-      rect(xButton, yButton2, lb, al);
-      
-      fill(100);
-      textSize(25);
-      fill(0, 0 , 0);
-      text("Instruções", 190, 300);
-      
-      if (mouseX > xButton && mouseX < xButton + lb && mouseY > yButton3 && mouseY < yButton3 + al) {
-        fill (124, 252, 0);
-        
-        if (mouseIsPressed) {
-          screen = 3;
-        }
-      } else {
-        fill(255);
-      }
-      
-      //rect(xButton, yButton3, lb, al);
-      
-      //textSize(25);
-      //fill(0, 0, 0);
-      //text("Opções", 205, 400);
-      
       circle(mouseX, mouseY, 10);
-      
-      break;
-      
+      break;      
     }
       
     case 1: {
@@ -321,41 +278,6 @@ function draw() {
       circle(mouseX, mouseY, 10);
         
       }
-      
-      break;
-    }
-      
-    case 2: {
-      background(220);
-      
-      textSize(35);
-      fill(0);
-      text("Instruções", 165, 50);
-      
-      //Explicação de como funciona o frogger
-      
-      textSize(12);
-      fill(0);
-      text("Este jogo consiste em tentar obter o máximo de pontos\nsem atingir os carros.\n\nA cada ponto realizado, os carros aceleram mais rápido.\n\nA cada 2 pontos feitos você recebe uma nova vida.\n\nO principal público alvo deste jogo é para alunos do ensino\nfundamental I. Podendo abordar as matérias de matemática\nvoltada para a identificação de polígonos e suas utilidades.", 105, 100);
-      
-      //Adicionando botão para voltar para o menu principal
-      
-     if (mouseX > xButton && mouseX < xButton + lb && mouseY > yButton3 && mouseY < yButton4 + al) {
-        fill (124, 252, 0);
-        
-        if (mouseIsPressed) {
-          screen = 0;
-        }
-      } else {
-        fill(255);
-      }
-      
-      rect(xButton, yButton4, lb, al);
-      
-      textSize(25);
-      fill(0, 0 ,0);
-      text("Voltar", 215, 400);
-      
       break;
     }
   }
