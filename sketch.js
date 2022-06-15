@@ -273,7 +273,7 @@ function draw() {
       
       textSize(25);
       fill(0, 0, 0);
-      text("Jogar novamente", 135, 295);
+      text("Jogar novamente", 105, 295);
       
       circle(mouseX, mouseY, 10);
         
