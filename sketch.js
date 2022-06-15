@@ -132,7 +132,7 @@ function draw() {
       textSize(25);
       fill(0, 0, 0);
       text("Clique para jogar", 190, 300);
-      
+  
       circle(mouseX, mouseY, 10);
       break;      
     }
@@ -259,7 +259,7 @@ function draw() {
       
       //Botão de jogar novamente
       if (kill == true) {
-        if (mouseX > xButton && mouseX < xButton + lb && mouseY > yButton5 && mouseY < yButton5 + al) {
+        if (mouseX > xButton && mouseX < xButton + lb && mouseY > yButton2 && mouseY < yButton2 + al) {
         fill (124, 252, 0);
         
         if (mouseIsPressed) {
