@@ -131,8 +131,8 @@ function draw() {
       
       textSize(25);
       fill(0, 0, 0);
-      text("Clique para jogar", 190, 300);
-  
+      text("Clique para jogar", 170, 300);
+      
       circle(mouseX, mouseY, 10);
       break;      
     }
@@ -273,7 +273,7 @@ function draw() {
       
       textSize(25);
       fill(0, 0, 0);
-      text("Jogar novamente", 105, 295);
+      text("Jogar novamente", 155, 295);
       
       circle(mouseX, mouseY, 10);
         
