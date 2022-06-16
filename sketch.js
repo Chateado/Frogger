@@ -1,7 +1,7 @@
 /* Desenvolvido por Luis Martins */
 
 //(Botões de interação do menu)
-var xButton, yButton1, yButton2;
+var xButton, yButton1, yButton2, yButton3;
 
 //Verificações do tamanho dos polígonos do menu
 var lb, al;
@@ -94,9 +94,10 @@ function setup() {
   faixa_1_x = 30;
   faixa_1_y = 225;
   
-  //Botão pra jogar novamente
+  //Botão pra jogar novamente e para voltar para o menu
   
   yButton2 = 250;
+  yButton3 = 350;
 }
 
 function draw() {
@@ -131,7 +132,7 @@ function draw() {
       
       textSize(25);
       fill(0, 0, 0);
-      text("Clique para jogar", 170, 300);
+      text("Clique para jogar", 150, 300);
       
       circle(mouseX, mouseY, 10);
       break;      
@@ -225,7 +226,7 @@ function draw() {
       }
       vidas = vidas - 1;
       resetarSapo();
-      
+
       }
       
       //Definição da linha inicial do sapo
@@ -271,14 +272,33 @@ function draw() {
       
       rect(xButton, yButton2, lb, al);
       
-      textSize(25);
+      textSize(15);
       fill(0, 0, 0);
-      text("Jogar novamente", 155, 295);
+      text("Jogar novamente", 185, 295);
+
+      if (mouseX > xButton && mouseX < xButton + lb && mouseY > yButton3 && mouseY < yButton3 + al) {
+        fill (124, 252, 0);
+        
+        if (mouseIsPressed) {
+          reiniciarJogo();
+
+          screen = 0;
+        }
+      } else {
+        fill(255);
+      }
+
+      rect(xButton, yButton3, lb, al);
+
+      textSize(15);
+      fill(0, 0 , 0);
+      text("Voltar para o menu", 175, 395);
+      
       
       circle(mouseX, mouseY, 10);
-        
-      }
+
       break;
+      }
     }
   }
   
